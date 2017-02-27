@@ -1,5 +1,5 @@
 # expressBlog
-一个基于 Express 框架搭建的博客
+一个基于 Express 框架搭建的博客  http://dodudu.cc
 
 ![img](static/images/FireShot Capture 8 - home - http___dodudu.cc_home.png)
 
