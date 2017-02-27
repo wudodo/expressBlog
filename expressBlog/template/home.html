@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>home</title>
+        <script src="js/工具箱.js"></script>
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+    <body>
+        <header>
+            <!-- 导航栏 -->
+            <div id="id-div-nav">
+                <ul>
+                    <li>
+                        <a href="#home">主页</a>
+                    </li>
+                    <li>
+                        <a href="#home">个人简历</a>
+                    </li>
+                    <li>
+                        <a href="#home">作品展示</a>
+                    </li>
+                    <li>
+                        <a href="/blog">博客</a>
+                    </li>
+                    <li>
+                        <a href="/markdown">Markdown</a>
+                    </li>
+                </ul>
+                <a id="id-a-logo" href="javascript:">dodudu</a>
+            </div>
+        </header>
+        <main>
+            <!-- 欢迎页 -->
+            <section id="id-section-home">
+                <div id="id-div-container">
+                    <img class="bb-home-item" src="../images/1.jpg" alt="">
+                    <div class="bb-home-content bb-home-item">
+                        <img src="../images/8.png" alt="">
+                        <p>欢迎来到 dudu.cc</p>
+                        <p>这是我的个人网站, 正在努力完善中</p>
+                        <p>有任何问题请联系我</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 简历页 -->
+            <section id="id-section-personal">
+                <div class="bb-personal-infomation ">
+                    <div class="personal-infomation-img">
+                        <img src="../images/x.JPG" alt="">
+                        <p>吴冬冬</p>
+                        <p id='id-p-1'>前端工程师</p>
+                    </div>
+                    <div class="personal-infomation-content">
+                        <!-- <p>吴冬冬</p> -->
+                        <p>学历：本科</p>
+                        <p>毕业院校：长安大学</p>
+                        <p>毕业时间：2014年</p>
+                    </div>
+                </div>
+                <!-- 技能栏按钮 -->
+                <div class="bb-personal-skill-control ">
+                    <a id="id-a-github" href="https://github.com/wudodo">GitHub</a>
+                    <a id="id-a-skill" href="javascript:">技能</a>
+                </div>
+
+                <!-- 技能细节 -->
+                <div class="bb-personal-skill-item bb-hide">
+                    <div class="personal-skill-title">
+                        <p>职业技能</p>
+
+                        <!-- 技能细节弹窗 -->
+                        <div id="id-div-alert-1" class="skill-alert bb-hide ">
+                            <p>HTML5和语义化的HTML</p>
+                            <p>CSS3实现较复杂的布局和动画</p>
+                            <p>适应移动端的响应式开发</p>
+                            <p>兼容性处理有了解</p>
+                        </div>
+
+                        <div id="id-div-alert-2" class="skill-alert bb-hide">
+                            <p>原生JavaScript编程</p>
+                            <p>使用ECMAscript6的新语法</p>
+                            <p>熟练运用 Ajax 与后端交互数据</p>
+                            <p>可以实现手写库</p>
+                        </div>
+                        <div id="id-div-alert-3" class="skill-alert bb-hide">
+                            <p>了解http协议</p>
+                            <p>使用AJAX和BOM实现SPA（单页Web应用）</p>
+                            <p>掌握基本的前端兼容性处理</p>
+                            <p>Bootstrap / Pure / FontAwesome 等库</p>
+                        </div>
+                        <div id="id-div-alert-4" class="skill-alert bb-hide">
+                            <p>jQuery和Bootstrap</p>
+                            <p>了解React框架</p>
+                            <p>可以使用React构建页面</p>
+                        </div>
+                        <div id="id-div-alert-5" class="skill-alert bb-hide">
+                            <p>Express搭建后端程序与数据库交互</p>
+                            <p>了解数据结构与算法</p>
+                            <p>个人网站，node.js的爬虫</p>
+                            <p>常见的异步编程解决方案</p>
+                        </div>
+                        <div id="id-div-alert-6" class="skill-alert bb-hide">
+                            <p>Electron实现简单的桌面级应用</p>
+                            <p>Echarts进行数据可视化</p>
+                            <p>科学上网，无碍阅读英文文档</p>
+                            <p>Photoshop 完成简单的设计</p>
+                        </div>
+
+                    </div>
+                    <div class="personal-skill-detail" data-id=1>
+                        <p data-id=1>HTML/CSS</p>
+                    </div>
+                    <div class="personal-skill-detail" data-id=2>
+                        <p data-id=2>ECMAscript</p>
+                    </div>
+                    <div class="personal-skill-detail" data-id=3>
+                        <p data-id=3>DOM/BOM</p>
+                    </div>
+                    <div class="personal-skill-detail" data-id=4>
+                        <p data-id=4>框架</p>
+                    </div>
+                    <div class="personal-skill-detail" data-id=5>
+                        <p data-id=5>Node.js</p>
+                    </div>
+                    <div class="personal-skill-detail" data-id=6>
+                        <p data-id=6>其他</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 作品页 -->
+            <section id="id-section-project">
+                <div class="bb-project-item">
+                    <img src="../images/w.png" alt="">
+                    <p>Web播放器</p>
+                </div>
+                <div class="bb-project-item">
+                    <img src="../images/m.png" alt="">
+                    <p>Markdown编辑器</p>
+                </div>
+                <div class="bb-project-item">
+                    <img src="../images/b.png" alt="">
+                    <p>Express个人网站</p>
+                </div>
+                <div class="bb-project-item">
+                    <img src="../images/p.png" alt="">
+                    <p>爬虫 + 数据可视化</p>
+                </div>
+
+            </section>
+            <section id="id-section-contract">
+            </section>
+
+        </main>
+
+        <script src="js/home.js"></script>
+    </body>
+</html>

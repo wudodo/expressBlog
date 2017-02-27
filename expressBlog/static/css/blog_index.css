@@ -1,0 +1,160 @@
+/*.fe20-blogs {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.blog-cell {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    outline: solid 1px lightblue;
+}*/
+
+* {
+    box-sizing: border-box;
+}
+
+.bb-hide {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #eaeaea;
+}
+
+main {
+    height: 100%;
+}
+
+.fe20-blogs {
+    margin-left: 260px;
+}
+
+
+/* 左侧 */
+.bb-blog-navigator {
+    float: left;
+    width: 260px;
+    height: 650px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.navi-top-background {
+    background: #FFEB3B;
+    width: 100%;
+    height: 228px;
+}
+.navi-picture {
+    width: 100%;
+}
+.navi-picture img {
+    width: 83%;
+    border-radius: 50%;
+    left: 50%;
+    top: 7em;
+    position: absolute;
+    transform: translateX(-50%);
+}
+a#id-a-backhome {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #03A9F4;
+}
+
+/* git图标 */
+#id-a-gitpic {
+    position: absolute;
+    top: 399px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#id-a-gitpic img {
+    width: 35px;
+}
+
+/* 登录框 */
+.navi-login {
+    margin-top: 18em;
+    position: relative;
+    color: #41c2fc;
+}
+.navi-login span {
+    position: absolute;
+    top: -29px;
+    left: 50%;
+    transform: translate(-50%);
+}
+input#id-input-password {
+    width: 170px;
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    border: 1px solid #03A9F4;
+}
+#id-a-login {
+    position: absolute;
+    top: 3px;
+    right: 21px;
+    color: #FF5722;
+    font-weight: bold;
+}
+
+
+/* 文章页面 */
+
+/* 评论功能先隐藏，以后再更新 */
+.blog-comments {
+    display: none;
+}
+
+.blog-cell {
+    margin-top: 30px;
+    /*border: 1px solid black;*/
+    /* max-width: 600px; */
+    margin-right: 100px;
+    margin-left: 68px;
+    height: 330px;
+    background: white;
+    margin-bottom: 39px;
+    overflow: hidden;
+    position: relative;
+}
+/* 标题 */
+.bb-blog-title {
+    clear: both;
+    font-size: xx-large;
+    margin: 0 1em;
+    color: gray;
+}
+a.blog-title {
+    color: gainsboro;
+}
+/* 作者和时间 */
+.blog-infomation {
+    float: right;
+    margin: 1em;
+    color: gray;
+}
+.blog-content {
+    margin: 0 2em;
+}
+
+/* 文章 more 按钮 */
+.blog-display-detail {
+    position: absolute;
+    left: 2em;
+    bottom: 1em;
+    color: rgba(255, 87, 34, 0.9);
+    border-top: 1px solid rgba(128, 128, 128, 0.35);
+    width: 85%;
+    padding-top: 6px;
+}

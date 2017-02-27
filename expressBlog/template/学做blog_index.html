@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>blog</title>
+        <link rel="stylesheet" href="../css/blog_index.css">
+        <!-- 引入Markdown库 -->
+        <script src="http://cdn.bootcss.com/remarkable/1.7.1/remarkable.js"></script>
+        <script src="../js/工具箱.js">
+
+        </script>
+    </head>
+    <body>
+        <!-- <h1>hello blog</h1> -->
+        <main>
+            <!-- 发表博客页面，默认隐藏，密码正确后显示 -->
+            <div class="blog-new bb-hide">
+                <label>
+                    博文标题
+                    <input type="text" id="id-input-title" value="">
+                </label>
+                <br>
+                <label>
+                    博文作者
+                    <input type="text" id="id-input-author" value="">
+                </label>
+                <br>
+                <label>
+                    博文内容
+                    <input type="text" id="id-input-content" value="">
+                </label>
+                <br>
+                <br>
+                <button id="id-button-submit">发表新博文</button>
+            </div>
+
+            <!-- 左侧导航栏 -->
+            <div class="bb-blog-navigator">
+                <!-- 上部背景色 -->
+                <div class="navi-top-background"></div>
+                <!-- 大头像 -->
+                <div class="navi-picture">
+                    <img src="../images/x.JPG" alt="">
+                </div>
+                <!-- 主页按钮 -->
+                <a id="id-a-backhome" href="/">主页</a>
+
+                <!-- git图标 -->
+                <a id="id-a-gitpic" href="https://github.com/wudodo">
+                    <img src="../images/github.png" alt="">
+                </a>
+
+                <!-- 登录框 -->
+                <div class="navi-login">
+                    <span>主人密码</span>
+                    <input id="id-input-password" type="text" name="" value="">
+                    <!-- <button type="button" id="id-button-login">登录</button> -->
+                    <a id="id-a-login" href="javascript:">Go</a>
+                </div>
+            </div>
+
+            <!-- 博客文章页面 -->
+            <div class="fe20-blogs">
+                <!-- 第一篇文章 -->
+                <div class="blog-cell">
+                    <div class="blog-infomation">
+                      <span>dodo</span> @ <time>2017/2/2 下午7:22:58</time>
+                    </div>
+                    <div class="bb-blog-title">
+                        <a class="blog-title" href="/blog?id=1" data-id ="1">
+                            flex布局
+                        </a>
+                    </div>
+
+                    <!-- 文章内容 -->
+                    <div class="blog-content">
+                        <p>- 使用前提:
+1. 所有浏览器都能支持(IE10以上);
+2. 所有元素都用flex布局;
+3. 设置了flex的容器,它的子元素的float、vertical-align 属性将失效。
+
+
+                        </p>
+                    </div>
+                    <a class="blog-display-detail" href="javascript:">more>></a>
+                </div>
+
+                <!-- 第二篇文章 -->
+                <div class="blog-cell">
+                    <div class="blog-infomation">
+                      <span>dodo</span> @ <time>2017/2/3 上午8:16:09</time>
+                    </div>
+                    <div class="bb-blog-title">
+                        <a class="blog-title" href="/blog?id=2" data-id ="2">
+                            块级元素和内联元素
+                        </a>
+                    </div>
+
+                    <!-- 文章内容 -->
+                    <div class="blog-content">
+                        <p>block元素默认宽度（margin+border+padding+content）是其父元素的content宽度 的100%，inline则是根据自身内容大小自动配置宽度。</p>
+                        <p>block元素内可以包含行内元素；</p>
+                        <p>block元素如果没有内容，默认height是0；</p>
+
+                    </div>
+                    <a class="blog-display-detail" href="javascript:">more>></a>
+                </div>
+
+                <!-- 第三篇文章 -->
+                <div class="blog-cell">
+                    <div class="blog-infomation">
+                      <span>dodo</span> @ <time>2017/2/11 下午3:52:18</time>
+                    </div>
+                    <div class="bb-blog-title">
+                        <a class="blog-title" href="/blog?id=3" data-id ="3">
+                            position属性
+                        </a>
+                    </div>
+
+                    <!-- 文章内容 -->
+                    <div class="blog-content">
+                        <p>设置了position属性的元素层级一定比没设置的元素高。</p>
+                        <p> 1.absolute即便对某个元素设置了absolute，如果没有进行定位，它会保持在原来的位置上。</p>
+                        <p> 2.fixed也脱离了文档流（普通流）；默认宽度为内容宽度。</p>
+
+                    </div>
+                    <a class="blog-display-detail" href="javascript:">more>></a>
+                </div>
+
+            </div>
+
+        </main>
+        <script src="js/blogMain.js"></script>
+    </body>
+</html>
